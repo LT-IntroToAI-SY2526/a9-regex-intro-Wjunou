@@ -9,6 +9,7 @@ from utilities import *
 # Assignment 8 Part II
 
 
+
 def get_planet_radius(planet_name: str) -> str:
     """Gets the radius of the given planet
 
@@ -20,7 +21,7 @@ def get_planet_radius(planet_name: str) -> str:
     """
     infobox_text = clean_text(get_first_infobox_text(get_page_html(planet_name)))
     # TODO: fill this in
-    pattern = "REPLACE ME"
+    pattern = "Polar radius(?P<radius>[\n\d.]+)"
     error_text = "Page infobox has no polar radius information"
     match = get_match(infobox_text, pattern, error_text)
     return match.group("radius")
@@ -37,6 +38,7 @@ def get_birth_date(name: str) -> str:
     """
     infobox_text = clean_text(get_first_infobox_text(get_page_html(name)))
     # TODO: fill this in
+    print(infobox_text)
     pattern = "REPLACE ME"
     error_text = (
         "Page infobox has no birth information (at least none in xxxx-xx-xx format)"
