@@ -1,6 +1,6 @@
 # some python libraries we'll be using
 import re, string, calendar
-from wikipedia import page
+from wikipedia import wikipediapage
 from bs4 import BeautifulSoup
 
 from typing import List, Match
@@ -84,4 +84,4 @@ if __name__ == "__main__":
     assert get_birth_date("Anita Borg") == "1949-01-17", "Incorrect birth date for Anita Borg"
     print('\n<<<< Birth date tests passed >>>>')
 
-    # print('\n<<<< All tests passed! >>>>')
+    print('\n<<<< All tests passed! >>>>')
