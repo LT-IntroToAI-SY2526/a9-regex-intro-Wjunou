@@ -84,4 +84,4 @@ if __name__ == "__main__":
     assert get_birth_date("Anita Borg") == "1949-01-17", "Incorrect birth date for Anita Borg"
     print('\n<<<< Birth date tests passed >>>>')
 
-    print('\n<<<< All tests passed! >>>>')
+    # print('\n<<<< All tests passed! >>>>')
